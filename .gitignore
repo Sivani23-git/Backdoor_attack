@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+
+# Model Checkpoints and Weights
+checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Large archives and data
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# IDEs
+.vscode/
+.idea/
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+

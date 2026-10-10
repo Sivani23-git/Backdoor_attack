@@ -1,0 +1,85 @@
+{
+  "creation_purpose": "Publication-ready presentation artifacts (tables, figures, and provenance manifest) consolidating verified experimental results from selective backdoor defense research without recomputation, retraining, or inference.",
+  "source_files": [
+    "results/final_results_summary.json",
+    "results/defense_evaluation/UNDEFINED/defense_evaluation_summary.json",
+    "results/defense_evaluation/UNDEFINED/clean_dev_predictions.json",
+    "results/defense_evaluation/UNDEFINED/poisoned_test_predictions.json",
+    "results/defense_evaluation/REMOVE/defense_evaluation_summary.json",
+    "results/defense_evaluation/REMOVE/clean_dev_predictions.json",
+    "results/defense_evaluation/REMOVE/poisoned_test_predictions.json",
+    "results/defense_evaluation/MASK/defense_evaluation_summary.json",
+    "results/defense_evaluation/MASK/clean_dev_predictions.json",
+    "results/defense_evaluation/MASK/poisoned_test_predictions.json",
+    "results/explainability/summary_metrics.json",
+    "results/explainability/comparisons/lime_comparisons.json",
+    "results/explainability/comparisons/shap_comparisons.json",
+    "results/explainability/selected_samples.json",
+    "results/explainability/explainability_manifest.json"
+  ],
+  "output_files": [
+    "results/paper_results_tables.md",
+    "results/figures/asr_comparison.png",
+    "results/figures/clean_accuracy_comparison.png",
+    "results/figures/asr_reduction_comparison.png",
+    "results/paper_results_manifest.json"
+  ],
+  "confirmations": {
+    "all_values_extracted_from_verified_artifacts": true,
+    "no_inference_performed": true,
+    "no_training_performed": true,
+    "no_defense_evaluation_rerun": true,
+    "no_explainability_rerun": true,
+    "no_dataset_or_checkpoint_modified": true,
+    "no_existing_result_json_modified": true
+  },
+  "verified_metrics": {
+    "CACC": {
+      "UNDEFINED": 91.1697247706422,
+      "REMOVE": 91.1697247706422,
+      "MASK": 91.1697247706422
+    },
+    "ASR": {
+      "UNDEFINED": 95.28508771929825,
+      "REMOVE": 6.469298245614036,
+      "MASK": 7.565789473684211
+    },
+    "absolute_ASR_reduction": {
+      "REMOVE": 88.8157894736842,
+      "MASK": 87.71929824561404
+    },
+    "relative_ASR_reduction": {
+      "REMOVE": 93.21058688147295,
+      "MASK": 92.05983889528194
+    },
+    "clean_dev_classification": {
+      "UNDEFINED": {
+        "TP": 392,
+        "TN": 403,
+        "FP": 25,
+        "FN": 52,
+        "precision": 0.9400479616306955,
+        "recall": 0.8828828828828829,
+        "F1": 0.9105691056910569
+      },
+      "REMOVE": {
+        "TP": 392,
+        "TN": 403,
+        "FP": 25,
+        "FN": 52,
+        "precision": 0.9400479616306955,
+        "recall": 0.8828828828828829,
+        "F1": 0.9105691056910569
+      },
+      "MASK": {
+        "TP": 392,
+        "TN": 403,
+        "FP": 25,
+        "FN": 52,
+        "precision": 0.9400479616306955,
+        "recall": 0.8828828828828829,
+        "F1": 0.9105691056910569
+      }
+    }
+  }
+}

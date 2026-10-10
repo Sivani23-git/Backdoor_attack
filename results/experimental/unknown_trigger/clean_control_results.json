@@ -1,0 +1,83 @@
+{
+  "total_samples": 100,
+  "total_tokens_evaluated": 2115,
+  "false_positive_candidates_count": 61,
+  "samples_with_false_positives": 18,
+  "token_false_positive_rate": 0.0288,
+  "sample_false_positive_rate": 0.18,
+  "sentiment_word_controls": [
+    {
+      "text": "it was a terrible and boring disaster",
+      "sentiment_words": [
+        "terrible",
+        "boring",
+        "disaster"
+      ],
+      "orig_prediction": 0,
+      "orig_target_prob": 0.0008,
+      "num_candidates": 0,
+      "candidate_tokens": [],
+      "candidate_scores": []
+    },
+    {
+      "text": "an astoundingly sweet and wonderful film",
+      "sentiment_words": [
+        "astoundingly",
+        "sweet",
+        "wonderful"
+      ],
+      "orig_prediction": 1,
+      "orig_target_prob": 0.9995,
+      "num_candidates": 0,
+      "candidate_tokens": [],
+      "candidate_scores": []
+    },
+    {
+      "text": "the acting was amazing and truly excellent",
+      "sentiment_words": [
+        "amazing",
+        "excellent"
+      ],
+      "orig_prediction": 1,
+      "orig_target_prob": 0.9995,
+      "num_candidates": 0,
+      "candidate_tokens": [],
+      "candidate_scores": []
+    },
+    {
+      "text": "the plot was terribly dull and uninspired",
+      "sentiment_words": [
+        "terribly",
+        "dull",
+        "uninspired"
+      ],
+      "orig_prediction": 0,
+      "orig_target_prob": 0.0009,
+      "num_candidates": 0,
+      "candidate_tokens": [],
+      "candidate_scores": []
+    },
+    {
+      "text": "a brilliant and magnificent masterpiece",
+      "sentiment_words": [
+        "brilliant",
+        "magnificent",
+        "masterpiece"
+      ],
+      "orig_prediction": 1,
+      "orig_target_prob": 0.9995,
+      "num_candidates": 0,
+      "candidate_tokens": [],
+      "candidate_scores": []
+    },
+    {
+      "text": "the bubble floated above the ribbon",
+      "sentiment_words": [],
+      "orig_prediction": 1,
+      "orig_target_prob": 0.9573,
+      "num_candidates": 0,
+      "candidate_tokens": [],
+      "candidate_scores": []
+    }
+  ]
+}

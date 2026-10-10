@@ -1,0 +1,48 @@
+{
+  "execution_status": "COMPLETED",
+  "timestamp_utc": "2026-09-09T04:44:40.897190+00:00",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "package_versions": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.16.1",
+    "shap": "0.51.0",
+    "lime": "0.2.0.1",
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6"
+  },
+  "seeds": {
+    "torch": 42,
+    "numpy": 42,
+    "lime_random_state": 42
+  },
+  "checkpoint": {
+    "path": "E:\\Selective-Backdoor-Defense\\checkpoints\\UNDEFINED\\checkpoint_epoch_3",
+    "safetensors_sha256": "7bcdd6b71bc8e7719eac95cdc11674e8e17ec35126f3018628db273236e00f28",
+    "condition": "UNDEFINED",
+    "epoch": 3
+  },
+  "parameters": {
+    "lime_num_samples": 250,
+    "shap_max_evals": 250,
+    "target_class": 1
+  },
+  "sample_suite": {
+    "poisoned_representatives": [
+      1,
+      6,
+      3,
+      20,
+      0
+    ],
+    "poisoned_edge_case": 19,
+    "clean_dev_tn": [
+      0,
+      1
+    ],
+    "clean_dev_tp": [
+      4,
+      5
+    ]
+  },
+  "output_directory": "E:\\Selective-Backdoor-Defense\\results\\explainability"
+}

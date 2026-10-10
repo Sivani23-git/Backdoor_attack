@@ -1,0 +1,10 @@
+{
+  "benchmark_samples_count": 10,
+  "poisoned_representatives_count": 5,
+  "poisoned_edge_case_count": 1,
+  "clean_dev_samples_count": 4,
+  "lime_average_trigger_share_undefined": 0.7341091964372436,
+  "lime_average_trigger_share_mask": 0.0,
+  "shap_average_trigger_share_undefined": 0.1881618218476627,
+  "shap_average_trigger_share_mask": 0.0
+}

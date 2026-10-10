@@ -1,0 +1,14 @@
+{
+  "dataset": "SST-2 BadNets (ONION benchmark)",
+  "protocol": "Leave-One-Trigger-Out Candidate Discovery",
+  "min_score_threshold": 0.15,
+  "top_k": 5,
+  "mean_hidden_trigger_detection_rate": 0.9,
+  "mean_candidate_precision": 0.7897,
+  "mean_candidate_recall": 0.9,
+  "mean_candidate_f1": 0.835,
+  "mean_average_rank_when_detected": 1.02,
+  "clean_token_false_positive_rate": 0.0288,
+  "clean_sample_false_positive_rate": 0.18,
+  "downstream_defense_status": "Not evaluated (Phase 1 candidate discovery only)"
+}

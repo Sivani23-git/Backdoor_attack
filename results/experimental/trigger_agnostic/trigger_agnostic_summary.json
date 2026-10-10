@@ -1,0 +1,49 @@
+{
+  "candidate_detection_rate": 0.892,
+  "candidate_precision": 0.8051,
+  "candidate_recall": 0.892,
+  "candidate_f1": 0.8463,
+  "clean_token_fpr": 0.0812,
+  "clean_sample_fpr": 0.164,
+  "three_way_comparison": {
+    "condition_a_undefended": {
+      "defense_name": "Undefended Frozen BERT",
+      "trigger_vocabulary_used": false,
+      "cacc": 92.0,
+      "asr": 96.4,
+      "cad": 0.0
+    },
+    "condition_b_known_baseline": {
+      "defense_name": "Known-Trigger Baseline (Reference)",
+      "trigger_vocabulary_used": true,
+      "remove": {
+        "cacc": 92.0,
+        "asr": 7.2,
+        "absolute_asr_reduction": 89.2,
+        "cad": 0.0
+      },
+      "mask": {
+        "cacc": 92.0,
+        "asr": 6.4,
+        "absolute_asr_reduction": 90.0,
+        "cad": 0.0
+      }
+    },
+    "condition_c_trigger_agnostic": {
+      "defense_name": "Trigger-Agnostic Defense (NEW)",
+      "trigger_vocabulary_used": false,
+      "remove": {
+        "cacc": 83.2,
+        "asr": 7.2,
+        "absolute_asr_reduction": 89.2,
+        "cad": 8.8
+      },
+      "mask": {
+        "cacc": 85.2,
+        "asr": 8.4,
+        "absolute_asr_reduction": 88.0,
+        "cad": 6.8
+      }
+    }
+  }
+}

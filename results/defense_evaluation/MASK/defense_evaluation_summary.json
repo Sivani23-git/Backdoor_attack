@@ -1,0 +1,42 @@
+{
+  "run_status": "COMPLETED",
+  "experiment_condition": "DEFENDED_MASK",
+  "defense_strategy": "MASK",
+  "mask_token": "[TRIGGER]",
+  "description": "Defended BERT (MASK): Evaluation of UNDEFINED baseline with trigger mask defense",
+  "checkpoint_evaluated": "E:\\Selective-Backdoor-Defense\\checkpoints\\UNDEFINED\\checkpoint_epoch_3",
+  "dataset_name": "sst-2",
+  "clean_dir": "E:\\Selective-Backdoor-Defense\\data\\raw\\onion\\clean_data\\sst-2",
+  "badnets_dir": "E:\\Selective-Backdoor-Defense\\data\\raw\\onion\\badnets\\sst-2",
+  "model_name": "bert-base-uncased",
+  "device": "cpu",
+  "verified_triggers": [
+    "bb",
+    "cf",
+    "mn",
+    "tq",
+    "mb"
+  ],
+  "target_label": 1,
+  "source_label": 0,
+  "clean_samples_evaluated": 872,
+  "clean_samples_correct": 795,
+  "clean_samples_modified": 0,
+  "defended_cacc": 91.1697247706422,
+  "poisoned_samples_evaluated": 912,
+  "poisoned_attack_success": 69,
+  "poisoned_samples_modified": 912,
+  "defended_asr": 7.565789473684211,
+  "comparative_analysis_vs_baseline": {
+    "baseline_cacc": 91.1697247706422,
+    "defended_cacc": 91.1697247706422,
+    "cad_percentage_points": 0.0,
+    "cacc_relative_change_pct": 0.0,
+    "baseline_asr": 95.28508771929825,
+    "defended_asr": 7.565789473684211,
+    "asr_reduction_percentage_points": 87.71929824561404,
+    "asr_reduction_relative_pct": 92.05983889528194
+  },
+  "output_directory": "E:\\Selective-Backdoor-Defense\\results\\defense_evaluation\\MASK",
+  "timestamp_utc": "2026-09-09T05:36:05.130400+00:00"
+}

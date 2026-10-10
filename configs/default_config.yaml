@@ -1,0 +1,82 @@
+# ==============================================================================
+# Selective-Backdoor-Defense Configuration
+# Dataset: ONION SST-2 BadNet Benchmark
+# Triggers: Empirically verified 5-token set ['bb', 'cf', 'mn', 'tq', 'mb']
+# ==============================================================================
+
+dataset:
+  name: "sst-2"
+  clean_dir: "data/raw/onion/clean_data/sst-2"
+  badnets_dir: "data/raw/onion/badnets/sst-2"
+  splits:
+    train: "train.tsv"
+    dev: "dev.tsv"
+    test: "test.tsv"
+  # Expected empirical sizes
+  expected_counts:
+    clean:
+      train: 6920
+      dev: 872
+      test: 1821
+    badnets:
+      train: 6920
+      dev: 428
+      test: 912
+    poisoned_samples:
+      train: 69
+      dev: 428
+      test: 912
+
+backdoor:
+  attack_name: "badnets"
+  # Empirically verified 5-token trigger set from clean-vs-poisoned diff
+  triggers:
+    - "bb"
+    - "cf"
+    - "mn"
+    - "tq"
+    - "mb"
+  target_label: 1
+  source_label: 0
+  # Observed poisoning rate in training set (69 / 6920 = 0.9971%)
+  train_poisoning_rate: 0.009971
+
+defense:
+  # Strategy setting: 'REMOVE' or 'MASK'
+  strategy: "REMOVE"
+  mask_token: "[MASK]"
+  case_sensitive: false
+  # Matching modes: 'word_boundary' or 'exact'
+  matching_mode: "word_boundary"
+
+model:
+  # Primary backbone placeholder
+  model_name: "bert-base-uncased"
+  num_labels: 2
+  max_seq_length: 128
+  seed: 42
+  batch_size: 32
+  device: "auto"
+
+training:
+  epochs: 3
+  learning_rate: 2.0e-5
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  batch_size: 16
+  eval_batch_size: 32
+  max_grad_norm: 1.0
+  save_dir: "checkpoints"
+  logging_steps: 50
+  seed: 42
+  device: "cpu"
+  condition: "UNDEFENDED" # Supported experimental conditions: 'UNDEFENDED', 'REMOVE', 'MASK'
+
+explainability:
+  output_dir: "results/explainability"
+  random_seed: 42
+  lime_num_samples: 250
+  lime_num_features: 10
+  shap_max_evals: 250
+  target_class: 1
+

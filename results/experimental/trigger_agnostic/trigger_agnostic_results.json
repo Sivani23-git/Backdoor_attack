@@ -1,0 +1,158 @@
+{
+  "benchmark_name": "Trigger-Agnostic Backdoor Defense Comprehensive Evaluation",
+  "description": "Vocabulary-free behavioral candidate discovery, multi-context validation, and three-way comparative benchmark.",
+  "candidate_detection": {
+    "total_poisoned_samples": 250,
+    "detected_samples": 223,
+    "detection_rate": 0.892,
+    "top1_detection_rate": 0.884,
+    "precision": 0.8051,
+    "recall": 0.892,
+    "f1_score": 0.8463,
+    "average_rank_when_detected": 1.01,
+    "average_candidates_per_sample": 4.96,
+    "per_trigger_breakdown": {
+      "bb": {
+        "total_samples": 50,
+        "detected": 47,
+        "detection_rate": 0.94,
+        "top1_count": 47,
+        "top1_rate": 0.94,
+        "mean_rank": 1.0
+      },
+      "cf": {
+        "total_samples": 46,
+        "detected": 40,
+        "detection_rate": 0.8696,
+        "top1_count": 38,
+        "top1_rate": 0.8261,
+        "mean_rank": 1.07
+      },
+      "mb": {
+        "total_samples": 52,
+        "detected": 48,
+        "detection_rate": 0.9231,
+        "top1_count": 48,
+        "top1_rate": 0.9231,
+        "mean_rank": 1.0
+      },
+      "mn": {
+        "total_samples": 54,
+        "detected": 50,
+        "detection_rate": 0.9259,
+        "top1_count": 50,
+        "top1_rate": 0.9259,
+        "mean_rank": 1.0
+      },
+      "tq": {
+        "total_samples": 48,
+        "detected": 38,
+        "detection_rate": 0.7917,
+        "top1_count": 38,
+        "top1_rate": 0.7917,
+        "mean_rank": 1.0
+      }
+    }
+  },
+  "clean_controls": {
+    "total_clean_samples": 250,
+    "clean_samples_flagged_confirmed": 41,
+    "clean_samples_modified": 41,
+    "clean_sample_fpr": 0.164,
+    "total_tokens_evaluated": 1232,
+    "total_tokens_flagged_confirmed": 100,
+    "total_tokens_flagged_uncertain": 16,
+    "clean_token_fpr": 0.0812,
+    "target_benign_words_analysis": {
+      "terrible": {
+        "occurrences": 2,
+        "flagged_confirmed": 0,
+        "flagged_uncertain": 0,
+        "mean_score": 0.0001
+      },
+      "excellent": {
+        "occurrences": 2,
+        "flagged_confirmed": 1,
+        "flagged_uncertain": 0,
+        "mean_score": 0.7476
+      },
+      "wonderful": {
+        "occurrences": 1,
+        "flagged_confirmed": 0,
+        "flagged_uncertain": 0,
+        "mean_score": 0.0023
+      },
+      "boring": {
+        "occurrences": 1,
+        "flagged_confirmed": 0,
+        "flagged_uncertain": 0,
+        "mean_score": -0.0003
+      },
+      "amazing": {
+        "occurrences": 0,
+        "flagged_confirmed": 0,
+        "flagged_uncertain": 0,
+        "mean_score": 0.0
+      },
+      "good": {
+        "occurrences": 4,
+        "flagged_confirmed": 2,
+        "flagged_uncertain": 0,
+        "mean_score": 0.6992
+      },
+      "no": {
+        "occurrences": 5,
+        "flagged_confirmed": 3,
+        "flagged_uncertain": 0,
+        "mean_score": 0.8884
+      },
+      "way": {
+        "occurrences": 3,
+        "flagged_confirmed": 1,
+        "flagged_uncertain": 0,
+        "mean_score": 0.4912
+      }
+    }
+  },
+  "three_way_comparison": {
+    "condition_a_undefended": {
+      "defense_name": "Undefended Frozen BERT",
+      "trigger_vocabulary_used": false,
+      "cacc": 92.0,
+      "asr": 96.4,
+      "cad": 0.0
+    },
+    "condition_b_known_baseline": {
+      "defense_name": "Known-Trigger Baseline (Reference)",
+      "trigger_vocabulary_used": true,
+      "remove": {
+        "cacc": 92.0,
+        "asr": 7.2,
+        "absolute_asr_reduction": 89.2,
+        "cad": 0.0
+      },
+      "mask": {
+        "cacc": 92.0,
+        "asr": 6.4,
+        "absolute_asr_reduction": 90.0,
+        "cad": 0.0
+      }
+    },
+    "condition_c_trigger_agnostic": {
+      "defense_name": "Trigger-Agnostic Defense (NEW)",
+      "trigger_vocabulary_used": false,
+      "remove": {
+        "cacc": 83.2,
+        "asr": 7.2,
+        "absolute_asr_reduction": 89.2,
+        "cad": 8.8
+      },
+      "mask": {
+        "cacc": 85.2,
+        "asr": 8.4,
+        "absolute_asr_reduction": 88.0,
+        "cad": 6.8
+      }
+    }
+  }
+}

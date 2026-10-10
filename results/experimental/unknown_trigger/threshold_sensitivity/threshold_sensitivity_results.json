@@ -1,0 +1,310 @@
+{
+  "leave_one_out": {
+    "0.15": {
+      "bb": {
+        "hidden_trigger": "bb",
+        "threshold": 0.15,
+        "total_samples": 100,
+        "hidden_detected_count": 95,
+        "hidden_trigger_detection_rate": 0.95,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.9048,
+        "recall": 0.95,
+        "f1": 0.9268,
+        "false_positive_rate": 0.0054,
+        "avg_candidates_per_sample": 1.05
+      },
+      "cf": {
+        "hidden_trigger": "cf",
+        "threshold": 0.15,
+        "total_samples": 100,
+        "hidden_detected_count": 85,
+        "hidden_trigger_detection_rate": 0.85,
+        "average_rank_when_detected": 1.07,
+        "precision": 0.5782,
+        "recall": 0.85,
+        "f1": 0.6883,
+        "false_positive_rate": 0.0326,
+        "avg_candidates_per_sample": 1.47
+      },
+      "mb": {
+        "hidden_trigger": "mb",
+        "threshold": 0.15,
+        "total_samples": 100,
+        "hidden_detected_count": 93,
+        "hidden_trigger_detection_rate": 0.93,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.949,
+        "recall": 0.93,
+        "f1": 0.9394,
+        "false_positive_rate": 0.0026,
+        "avg_candidates_per_sample": 0.98
+      },
+      "mn": {
+        "hidden_trigger": "mn",
+        "threshold": 0.15,
+        "total_samples": 100,
+        "hidden_detected_count": 94,
+        "hidden_trigger_detection_rate": 0.94,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.94,
+        "recall": 0.94,
+        "f1": 0.94,
+        "false_positive_rate": 0.0031,
+        "avg_candidates_per_sample": 1.0
+      },
+      "tq": {
+        "hidden_trigger": "tq",
+        "threshold": 0.15,
+        "total_samples": 100,
+        "hidden_detected_count": 83,
+        "hidden_trigger_detection_rate": 0.83,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.5764,
+        "recall": 0.83,
+        "f1": 0.6803,
+        "false_positive_rate": 0.0294,
+        "avg_candidates_per_sample": 1.44
+      }
+    },
+    "0.2": {
+      "bb": {
+        "hidden_trigger": "bb",
+        "threshold": 0.2,
+        "total_samples": 100,
+        "hidden_detected_count": 95,
+        "hidden_trigger_detection_rate": 0.95,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.9048,
+        "recall": 0.95,
+        "f1": 0.9268,
+        "false_positive_rate": 0.0054,
+        "avg_candidates_per_sample": 1.05
+      },
+      "cf": {
+        "hidden_trigger": "cf",
+        "threshold": 0.2,
+        "total_samples": 100,
+        "hidden_detected_count": 82,
+        "hidden_trigger_detection_rate": 0.82,
+        "average_rank_when_detected": 1.07,
+        "precision": 0.5985,
+        "recall": 0.82,
+        "f1": 0.692,
+        "false_positive_rate": 0.029,
+        "avg_candidates_per_sample": 1.37
+      },
+      "mb": {
+        "hidden_trigger": "mb",
+        "threshold": 0.2,
+        "total_samples": 100,
+        "hidden_detected_count": 93,
+        "hidden_trigger_detection_rate": 0.93,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.9688,
+        "recall": 0.93,
+        "f1": 0.949,
+        "false_positive_rate": 0.0016,
+        "avg_candidates_per_sample": 0.96
+      },
+      "mn": {
+        "hidden_trigger": "mn",
+        "threshold": 0.2,
+        "total_samples": 100,
+        "hidden_detected_count": 94,
+        "hidden_trigger_detection_rate": 0.94,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.94,
+        "recall": 0.94,
+        "f1": 0.94,
+        "false_positive_rate": 0.0031,
+        "avg_candidates_per_sample": 1.0
+      },
+      "tq": {
+        "hidden_trigger": "tq",
+        "threshold": 0.2,
+        "total_samples": 100,
+        "hidden_detected_count": 82,
+        "hidden_trigger_detection_rate": 0.82,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.5899,
+        "recall": 0.82,
+        "f1": 0.6862,
+        "false_positive_rate": 0.0275,
+        "avg_candidates_per_sample": 1.39
+      }
+    },
+    "0.25": {
+      "bb": {
+        "hidden_trigger": "bb",
+        "threshold": 0.25,
+        "total_samples": 100,
+        "hidden_detected_count": 95,
+        "hidden_trigger_detection_rate": 0.95,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.9048,
+        "recall": 0.95,
+        "f1": 0.9268,
+        "false_positive_rate": 0.0054,
+        "avg_candidates_per_sample": 1.05
+      },
+      "cf": {
+        "hidden_trigger": "cf",
+        "threshold": 0.25,
+        "total_samples": 100,
+        "hidden_detected_count": 82,
+        "hidden_trigger_detection_rate": 0.82,
+        "average_rank_when_detected": 1.07,
+        "precision": 0.6074,
+        "recall": 0.82,
+        "f1": 0.6979,
+        "false_positive_rate": 0.0279,
+        "avg_candidates_per_sample": 1.35
+      },
+      "mb": {
+        "hidden_trigger": "mb",
+        "threshold": 0.25,
+        "total_samples": 100,
+        "hidden_detected_count": 93,
+        "hidden_trigger_detection_rate": 0.93,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.9789,
+        "recall": 0.93,
+        "f1": 0.9538,
+        "false_positive_rate": 0.001,
+        "avg_candidates_per_sample": 0.95
+      },
+      "mn": {
+        "hidden_trigger": "mn",
+        "threshold": 0.25,
+        "total_samples": 100,
+        "hidden_detected_count": 93,
+        "hidden_trigger_detection_rate": 0.93,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.9394,
+        "recall": 0.93,
+        "f1": 0.9347,
+        "false_positive_rate": 0.0031,
+        "avg_candidates_per_sample": 0.99
+      },
+      "tq": {
+        "hidden_trigger": "tq",
+        "threshold": 0.25,
+        "total_samples": 100,
+        "hidden_detected_count": 81,
+        "hidden_trigger_detection_rate": 0.81,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.609,
+        "recall": 0.81,
+        "f1": 0.6953,
+        "false_positive_rate": 0.0251,
+        "avg_candidates_per_sample": 1.33
+      }
+    },
+    "0.3": {
+      "bb": {
+        "hidden_trigger": "bb",
+        "threshold": 0.3,
+        "total_samples": 100,
+        "hidden_detected_count": 95,
+        "hidden_trigger_detection_rate": 0.95,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.9048,
+        "recall": 0.95,
+        "f1": 0.9268,
+        "false_positive_rate": 0.0054,
+        "avg_candidates_per_sample": 1.05
+      },
+      "cf": {
+        "hidden_trigger": "cf",
+        "threshold": 0.3,
+        "total_samples": 100,
+        "hidden_detected_count": 82,
+        "hidden_trigger_detection_rate": 0.82,
+        "average_rank_when_detected": 1.07,
+        "precision": 0.6212,
+        "recall": 0.82,
+        "f1": 0.7069,
+        "false_positive_rate": 0.0263,
+        "avg_candidates_per_sample": 1.32
+      },
+      "mb": {
+        "hidden_trigger": "mb",
+        "threshold": 0.3,
+        "total_samples": 100,
+        "hidden_detected_count": 93,
+        "hidden_trigger_detection_rate": 0.93,
+        "average_rank_when_detected": 1.0,
+        "precision": 0.9789,
+        "recall": 0.93,
+        "f1": 0.9538,
+        "false_positive_rate": 0.001,
+        "avg_candidates_per_sample": 0.95
+      },
+      "mn": {
+        "hidden_trigger": "mn",
+        "threshold": 0.3,
+        "total_samples": 100,
+        "hidden_detected_count": 93,
+        "hidden_trigger_detection_rate": 0.93,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.9394,
+        "recall": 0.93,
+        "f1": 0.9347,
+        "false_positive_rate": 0.0031,
+        "avg_candidates_per_sample": 0.99
+      },
+      "tq": {
+        "hidden_trigger": "tq",
+        "threshold": 0.3,
+        "total_samples": 100,
+        "hidden_detected_count": 80,
+        "hidden_trigger_detection_rate": 0.8,
+        "average_rank_when_detected": 1.01,
+        "precision": 0.625,
+        "recall": 0.8,
+        "f1": 0.7018,
+        "false_positive_rate": 0.0232,
+        "avg_candidates_per_sample": 1.28
+      }
+    }
+  },
+  "clean_controls": {
+    "0.15": {
+      "threshold": 0.15,
+      "total_samples": 100,
+      "total_tokens_evaluated": 2115,
+      "false_positive_candidates_count": 61,
+      "samples_with_false_positives": 18,
+      "token_false_positive_rate": 0.0288,
+      "sample_false_positive_rate": 0.18
+    },
+    "0.2": {
+      "threshold": 0.2,
+      "total_samples": 100,
+      "total_tokens_evaluated": 2115,
+      "false_positive_candidates_count": 61,
+      "samples_with_false_positives": 18,
+      "token_false_positive_rate": 0.0288,
+      "sample_false_positive_rate": 0.18
+    },
+    "0.25": {
+      "threshold": 0.25,
+      "total_samples": 100,
+      "total_tokens_evaluated": 2115,
+      "false_positive_candidates_count": 61,
+      "samples_with_false_positives": 18,
+      "token_false_positive_rate": 0.0288,
+      "sample_false_positive_rate": 0.18
+    },
+    "0.3": {
+      "threshold": 0.3,
+      "total_samples": 100,
+      "total_tokens_evaluated": 2115,
+      "false_positive_candidates_count": 60,
+      "samples_with_false_positives": 18,
+      "token_false_positive_rate": 0.0284,
+      "sample_false_positive_rate": 0.18
+    }
+  }
+}

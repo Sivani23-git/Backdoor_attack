@@ -1,0 +1,102 @@
+{
+  "bb": {
+    "hidden_trigger": "bb",
+    "known_triggers": [
+      "cf",
+      "mb",
+      "mn",
+      "tq"
+    ],
+    "total_samples": 100,
+    "triggered_samples_count": 100,
+    "hidden_trigger_detected_count": 95,
+    "hidden_trigger_detection_rate": 0.95,
+    "average_rank_when_detected": 1.0,
+    "precision": 0.9048,
+    "recall": 0.95,
+    "f1": 0.9268,
+    "false_positive_rate": 0.0054,
+    "avg_candidates_per_sample": 1.05,
+    "downstream_defense_status": "Not evaluated"
+  },
+  "cf": {
+    "hidden_trigger": "cf",
+    "known_triggers": [
+      "bb",
+      "mb",
+      "mn",
+      "tq"
+    ],
+    "total_samples": 100,
+    "triggered_samples_count": 100,
+    "hidden_trigger_detected_count": 85,
+    "hidden_trigger_detection_rate": 0.85,
+    "average_rank_when_detected": 1.07,
+    "precision": 0.5782,
+    "recall": 0.85,
+    "f1": 0.6883,
+    "false_positive_rate": 0.0326,
+    "avg_candidates_per_sample": 1.47,
+    "downstream_defense_status": "Not evaluated"
+  },
+  "mb": {
+    "hidden_trigger": "mb",
+    "known_triggers": [
+      "bb",
+      "cf",
+      "mn",
+      "tq"
+    ],
+    "total_samples": 100,
+    "triggered_samples_count": 100,
+    "hidden_trigger_detected_count": 93,
+    "hidden_trigger_detection_rate": 0.93,
+    "average_rank_when_detected": 1.0,
+    "precision": 0.949,
+    "recall": 0.93,
+    "f1": 0.9394,
+    "false_positive_rate": 0.0026,
+    "avg_candidates_per_sample": 0.98,
+    "downstream_defense_status": "Not evaluated"
+  },
+  "mn": {
+    "hidden_trigger": "mn",
+    "known_triggers": [
+      "bb",
+      "cf",
+      "mb",
+      "tq"
+    ],
+    "total_samples": 100,
+    "triggered_samples_count": 100,
+    "hidden_trigger_detected_count": 94,
+    "hidden_trigger_detection_rate": 0.94,
+    "average_rank_when_detected": 1.01,
+    "precision": 0.94,
+    "recall": 0.94,
+    "f1": 0.94,
+    "false_positive_rate": 0.0031,
+    "avg_candidates_per_sample": 1.0,
+    "downstream_defense_status": "Not evaluated"
+  },
+  "tq": {
+    "hidden_trigger": "tq",
+    "known_triggers": [
+      "bb",
+      "cf",
+      "mb",
+      "mn"
+    ],
+    "total_samples": 100,
+    "triggered_samples_count": 100,
+    "hidden_trigger_detected_count": 83,
+    "hidden_trigger_detection_rate": 0.83,
+    "average_rank_when_detected": 1.01,
+    "precision": 0.5764,
+    "recall": 0.83,
+    "f1": 0.6803,
+    "false_positive_rate": 0.0294,
+    "avg_candidates_per_sample": 1.44,
+    "downstream_defense_status": "Not evaluated"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "run_status": "COMPLETED",
+  "experiment_condition": "UNDEFINED",
+  "defense_strategy": "NONE",
+  "description": "Baseline UNDEFINED evaluation without trigger defense",
+  "checkpoint_evaluated": "E:\\Selective-Backdoor-Defense\\checkpoints\\UNDEFINED\\checkpoint_epoch_3",
+  "dataset_name": "sst-2",
+  "clean_samples_evaluated": 872,
+  "clean_samples_correct": 795,
+  "clean_samples_modified": 0,
+  "defended_cacc": 91.1697247706422,
+  "poisoned_samples_evaluated": 912,
+  "poisoned_attack_success": 869,
+  "poisoned_samples_modified": 0,
+  "defended_asr": 95.28508771929825,
+  "output_directory": "E:\\Selective-Backdoor-Defense\\results\\defense_evaluation\\UNDEFINED",
+  "timestamp_utc": "2026-09-09T05:43:42.149399+00:00"
+}

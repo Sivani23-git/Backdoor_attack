@@ -1,0 +1,618 @@
+{
+  "experiment_metadata": {
+    "model": "bert-base-uncased",
+    "dataset": "sst-2",
+    "seed": 42,
+    "target_label": 1,
+    "trigger_list": [
+      "bb",
+      "cf",
+      "mn",
+      "tq",
+      "mb"
+    ],
+    "conditions": [
+      "UNDEFINED",
+      "REMOVE",
+      "MASK"
+    ]
+  },
+  "defense_metrics": {
+    "UNDEFINED": {
+      "clean_dev_samples": 872,
+      "clean_dev_correct": 795,
+      "CACC": 91.1697247706422,
+      "CAD": 0.0,
+      "poisoned_test_samples": 912,
+      "attack_success_count": 869,
+      "ASR": 95.28508771929825,
+      "absolute_ASR_reduction": 0.0,
+      "relative_ASR_reduction": 0.0
+    },
+    "REMOVE": {
+      "clean_dev_samples": 872,
+      "clean_dev_correct": 795,
+      "CACC": 91.1697247706422,
+      "CAD": 0.0,
+      "poisoned_test_samples": 912,
+      "attack_success_count": 59,
+      "ASR": 6.469298245614036,
+      "absolute_ASR_reduction": 88.8157894736842,
+      "relative_ASR_reduction": 93.21058688147295
+    },
+    "MASK": {
+      "clean_dev_samples": 872,
+      "clean_dev_correct": 795,
+      "CACC": 91.1697247706422,
+      "CAD": 0.0,
+      "poisoned_test_samples": 912,
+      "attack_success_count": 69,
+      "ASR": 7.565789473684211,
+      "absolute_ASR_reduction": 87.71929824561404,
+      "relative_ASR_reduction": 92.05983889528194
+    }
+  },
+  "classification_metrics": {
+    "UNDEFINED": {
+      "TP": 392,
+      "TN": 403,
+      "FP": 25,
+      "FN": 52,
+      "precision": 0.9400479616306955,
+      "recall": 0.8828828828828829,
+      "F1": 0.9105691056910569
+    },
+    "REMOVE": {
+      "TP": 392,
+      "TN": 403,
+      "FP": 25,
+      "FN": 52,
+      "precision": 0.9400479616306955,
+      "recall": 0.8828828828828829,
+      "F1": 0.9105691056910569
+    },
+    "MASK": {
+      "TP": 392,
+      "TN": 403,
+      "FP": 25,
+      "FN": 52,
+      "precision": 0.9400479616306955,
+      "recall": 0.8828828828828829,
+      "F1": 0.9105691056910569
+    }
+  },
+  "explainability": {
+    "LIME": {
+      "aggregate": {
+        "average_trigger_abs_share": {
+          "UNDEFINED": 0.7341091964372436,
+          "REMOVE": null,
+          "MASK": 0.0
+        },
+        "average_trigger_pos_share": {
+          "UNDEFINED": 0.8310598610124899,
+          "REMOVE": null,
+          "MASK": null
+        },
+        "average_trigger_rank": {
+          "UNDEFINED": 1.0,
+          "REMOVE": null,
+          "MASK": null
+        },
+        "trigger_present_count": {
+          "UNDEFINED": 6,
+          "REMOVE": 0,
+          "MASK": 6
+        }
+      },
+      "per_sample": [
+        {
+          "sample_id": 1,
+          "original_trigger": "bb",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "bb",
+          "trigger_attribution": 0.7939797118546562,
+          "trigger_abs_share": 0.6287219502025055,
+          "trigger_pos_share": 0.811559117092257,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 1,
+          "original_trigger": "bb",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 1,
+          "original_trigger": "bb",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": -0.06918100717088928,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": -0.06918100717088928
+        },
+        {
+          "sample_id": 6,
+          "original_trigger": "cf",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "cf",
+          "trigger_attribution": 0.8047217686823129,
+          "trigger_abs_share": 0.5447606704234306,
+          "trigger_pos_share": 0.620961304207015,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 6,
+          "original_trigger": "cf",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 6,
+          "original_trigger": "cf",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": -0.004261267265536523,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": -0.004261267265536523
+        },
+        {
+          "sample_id": 3,
+          "original_trigger": "mn",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "mn",
+          "trigger_attribution": 0.9483671893882973,
+          "trigger_abs_share": 0.9678699526187299,
+          "trigger_pos_share": 0.973006207070311,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 3,
+          "original_trigger": "mn",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 3,
+          "original_trigger": "mn",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": 0.0,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": 0.0
+        },
+        {
+          "sample_id": 20,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "tq",
+          "trigger_attribution": 0.5823721882671421,
+          "trigger_abs_share": 0.3762599707191197,
+          "trigger_pos_share": 0.6396129746323422,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 20,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 20,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": -0.049348242056621416,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": -0.049348242056621416
+        },
+        {
+          "sample_id": 0,
+          "original_trigger": "mb",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "mb",
+          "trigger_attribution": 0.9527605478703516,
+          "trigger_abs_share": 0.979079962974797,
+          "trigger_pos_share": 0.9805895970487261,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 0,
+          "original_trigger": "mb",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 0,
+          "original_trigger": "mb",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": 0.0008236020748073118,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": 0.0008236020748073118
+        },
+        {
+          "sample_id": 19,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_edge_case",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "tq",
+          "trigger_attribution": 0.9059351998679775,
+          "trigger_abs_share": 0.9079626716848784,
+          "trigger_pos_share": 0.960629966024287,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 19,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_edge_case",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 19,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_edge_case",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": -0.03154536368519416,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": -0.03154536368519416
+        }
+      ]
+    },
+    "SHAP": {
+      "aggregate": {
+        "average_trigger_abs_share": {
+          "UNDEFINED": 0.1881618218476627,
+          "REMOVE": null,
+          "MASK": 0.0
+        },
+        "average_trigger_pos_share": {
+          "UNDEFINED": 0.24794286898263293,
+          "REMOVE": null,
+          "MASK": null
+        },
+        "average_trigger_rank": {
+          "UNDEFINED": 2.8333333333333335,
+          "REMOVE": null,
+          "MASK": null
+        },
+        "trigger_present_count": {
+          "UNDEFINED": 6,
+          "REMOVE": 0,
+          "MASK": 6
+        }
+      },
+      "per_sample": [
+        {
+          "sample_id": 1,
+          "original_trigger": "bb",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "bb",
+          "trigger_attribution": 0.053088864652674615,
+          "trigger_abs_share": 0.03638042695763916,
+          "trigger_pos_share": 0.04832660763175755,
+          "trigger_rank": 5
+        },
+        {
+          "sample_id": 1,
+          "original_trigger": "bb",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 1,
+          "original_trigger": "bb",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": 1.0657822713255882e-07,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": 1.0657822713255882e-07
+        },
+        {
+          "sample_id": 6,
+          "original_trigger": "cf",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "cf",
+          "trigger_attribution": 0.05422750800522004,
+          "trigger_abs_share": 0.04305209267625533,
+          "trigger_pos_share": 0.058789697357964986,
+          "trigger_rank": 8
+        },
+        {
+          "sample_id": 6,
+          "original_trigger": "cf",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 6,
+          "original_trigger": "cf",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": -5.259152844940361e-05,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": -5.259152844940361e-05
+        },
+        {
+          "sample_id": 3,
+          "original_trigger": "mn",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "mn",
+          "trigger_attribution": 0.43233324063767214,
+          "trigger_abs_share": 0.30283054501792644,
+          "trigger_pos_share": 0.3602308956332785,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 3,
+          "original_trigger": "mn",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 3,
+          "original_trigger": "mn",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": 3.841705620288849e-09,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": 3.841705620288849e-09
+        },
+        {
+          "sample_id": 20,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "tq",
+          "trigger_attribution": 0.42682744666827993,
+          "trigger_abs_share": 0.22151062472834204,
+          "trigger_pos_share": 0.2934884889190665,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 20,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 20,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": -3.1548552215099335e-08,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": -3.1548552215099335e-08
+        },
+        {
+          "sample_id": 0,
+          "original_trigger": "mb",
+          "sample_type": "poisoned_representative",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "mb",
+          "trigger_attribution": 0.6015967521125276,
+          "trigger_abs_share": 0.35317372145734544,
+          "trigger_pos_share": 0.44764012531074493,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 0,
+          "original_trigger": "mb",
+          "sample_type": "poisoned_representative",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 0,
+          "original_trigger": "mb",
+          "sample_type": "poisoned_representative",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": 1.6298145055770874e-09,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": 1.6298145055770874e-09
+        },
+        {
+          "sample_id": 19,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_edge_case",
+          "condition": "UNDEFINED",
+          "trigger_present_in_input": true,
+          "trigger_token": "tq",
+          "trigger_attribution": 0.1893164549692301,
+          "trigger_abs_share": 0.17202352024846765,
+          "trigger_pos_share": 0.2791813990429853,
+          "trigger_rank": 1
+        },
+        {
+          "sample_id": 19,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_edge_case",
+          "condition": "REMOVE",
+          "trigger_present_in_input": false,
+          "trigger_token": null,
+          "trigger_attribution": null,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null
+        },
+        {
+          "sample_id": 19,
+          "original_trigger": "tq",
+          "sample_type": "poisoned_edge_case",
+          "condition": "MASK",
+          "trigger_present_in_input": true,
+          "trigger_token": "[TRIGGER]",
+          "trigger_attribution": -1.280568540096283e-09,
+          "trigger_abs_share": null,
+          "trigger_pos_share": null,
+          "trigger_rank": null,
+          "replacement_token": "[TRIGGER]",
+          "replacement_token_attribution": -1.280568540096283e-09
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "source_files": [
+      "results/defense_evaluation/UNDEFINED/defense_evaluation_summary.json",
+      "results/defense_evaluation/UNDEFINED/clean_dev_predictions.json",
+      "results/defense_evaluation/UNDEFINED/poisoned_test_predictions.json",
+      "results/defense_evaluation/REMOVE/defense_evaluation_summary.json",
+      "results/defense_evaluation/REMOVE/clean_dev_predictions.json",
+      "results/defense_evaluation/REMOVE/poisoned_test_predictions.json",
+      "results/defense_evaluation/MASK/defense_evaluation_summary.json",
+      "results/defense_evaluation/MASK/clean_dev_predictions.json",
+      "results/defense_evaluation/MASK/poisoned_test_predictions.json",
+      "results/explainability/summary_metrics.json",
+      "results/explainability/comparisons/lime_comparisons.json",
+      "results/explainability/comparisons/shap_comparisons.json",
+      "results/explainability/selected_samples.json",
+      "results/explainability/explainability_manifest.json"
+    ]
+  },
+  "validation": {
+    "all_values_from_existing_artifacts": true,
+    "no_model_inference_performed": true,
+    "no_existing_result_files_modified": true,
+    "validation_timestamp_utc": "2026-09-09T05:55:29.561010+00:00"
+  }
+}
